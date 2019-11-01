@@ -1,0 +1,108 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Cadastro de Usuário</title>
+    <link rel="stylesheet" type="text/css" href="./libs/bootstrap-4.3.1/bootstrapcss.min.css">
+    <script type="text/javascript" src="./libs/JQuery/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="./libs/JQuery/popper.min.js"></script>
+    <script type="text/javascript" src="./libs/bootstrap-4.3.1/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-6 mx-auto">
+                <div class="card card-signin my-5 shadow p-3 mb-3 bg-white rounded">
+                    <div class="card-body">
+                        <h3 class="card-title text-center">Cadastrar Usuário</h3>
+                        <div class="form-signin">
+                            <div class="form-label-group mb-4">
+                                <label>Nome Completo</label>
+                                <input id="inputNome" type="text" class="form-control" placeholder="Nome" autofocus>
+                            </div>
+                            <div class="form-label-group mb-4">
+                                <label for="inputUser">Usuário</label>
+                                <input id="inputUser" type="text" class="form-control" placeholder="Usuário">
+                            </div>
+                            <div class="form-label-group mb-4">
+                                <label for="inputPass">Senha</label>
+                                <input id="inputPass" type="password" class="form-control" placeholder="Senha">
+                            </div>
+                            <div class="form-label-group mb-4">
+                                <label for="inputEmail">Email</label>
+                                <input id="inputEmail" type="email" class="form-control" placeholder="Email">
+                            </div>
+                            <div class="form-label-group mb-4">
+                                <label for="inputEmp">Empresa</label>
+                                <input id="inputEmp" type="text" class="form-control" placeholder="Empresa">
+                            </div>
+                            <div class="form-label-group mb-4">
+                                <label for="lstTipo">Tipo</label>
+                                <select class="form-control" id="lstTipo">
+                                    <option>Suporte</option>
+                                    <option>Cliente</option>
+                                    <option>Desenvolvedor</option>
+                                </select>
+                            </div>
+                            <div class="col" style="float: left">
+                                <button id="criar" class="btn btn-lg btn-primary ml-0" style="padding: 10px 47px; float: left;">Criar</button>
+                                <button id="cancelar" class="btn btn-lg btn-primary" style="padding: 10px 30px; float: right;"> Cancelar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script>
+    $("#criar").click(function() {
+        var user = document.getElementById("inputUser").value;
+        var senha = document.getElementById("inputPass").value;
+        var company = document.getElementById("inputEmp").value;
+        var nome = document.getElementById("inputNome").value;
+        var email = document.getElementById("inputEmail").value;
+        var tipo;
+        switch (document.getElementById("lstTipo").value) {
+            case "Suporte":
+                tipo = "Support";
+                break;
+            case "Cliente":
+                tipo = "Client";
+                break;
+            case "Desenvolvedor":
+                tipo = "Dev";
+                break;
+        }
+
+        var newUser = {
+            "id": -1,
+            "name": nome,
+            "company": company,
+            "login": user,
+            "password": senha,
+            "type": tipo,
+            "email": email
+        }
+        $.ajax({
+            method: "POST",
+            url: "http://localhost:52187/api/user/add",
+            contentType: "application/json",
+            data: JSON.stringify(newUser)
+        }).done(function() {
+            document.getElementById("inputUser").value = "";
+            document.getElementById("inputPass").value = "";
+            document.getElementById("inputEmail").value = "";
+            document.getElementById("inputNome").value = "";
+            document.getElementById("inputEmp").value = "";
+        }).fail(function(data) {
+            alert(data.statusText);
+        });
+    });
+
+    $("#cancelar").click(function() {
+        window.location.href = "./Login.html";
+    });
+</script></html>
