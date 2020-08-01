@@ -11804,21 +11804,19 @@
   },
   "packageFolders": {
     "C:\\Users\\igor_\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\igor_\\OneDrive\\Área de Trabalho\\MVC\\SupportAPI\\SupportAPI\\SupportAPI.csproj",
+      "projectUniqueName": "D:\\Projects\\SupportAPI\\SupportAPI\\SupportAPI.csproj",
       "projectName": "SupportAPI",
-      "projectPath": "C:\\Users\\igor_\\OneDrive\\Área de Trabalho\\MVC\\SupportAPI\\SupportAPI\\SupportAPI.csproj",
+      "projectPath": "D:\\Projects\\SupportAPI\\SupportAPI\\SupportAPI.csproj",
       "packagesPath": "C:\\Users\\igor_\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\igor_\\OneDrive\\Área de Trabalho\\MVC\\SupportAPI\\SupportAPI\\obj\\",
+      "outputPath": "D:\\Projects\\SupportAPI\\SupportAPI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\",
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "C:\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
         "C:\\Users\\igor_\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -11870,16 +11868,23 @@
             "version": "[2.1.11, )"
           },
           "Microsoft.NETCore.App": {
+            "suppressParent": "All",
             "target": "Package",
             "version": "[2.1.0, )",
             "autoReferenced": true
           }
         },
         "imports": [
-          "net461"
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
         ],
         "assetTargetFallback": true,
-        "warn": true
+        "warn": true,
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -26,3 +26,22 @@ C:\Users\igor_\OneDrive\Área de Trabalho\MVC\SupportAPI\SupportAPI\obj\Debug\ne
 C:\Users\igor_\OneDrive\Área de Trabalho\MVC\SupportAPI\SupportAPI\obj\Debug\netcoreapp2.1\SupportAPI.RazorTargetAssemblyInfo.cache
 C:\Users\igor_\OneDrive\Área de Trabalho\MVC\SupportAPI\SupportAPI\obj\Debug\netcoreapp2.1\SupportAPI.dll
 C:\Users\igor_\OneDrive\Área de Trabalho\MVC\SupportAPI\SupportAPI\obj\Debug\netcoreapp2.1\SupportAPI.pdb
+D:\Projects\SupportAPI\SupportAPI\bin\Debug\netcoreapp2.1\Properties\launchSettings.json
+D:\Projects\SupportAPI\SupportAPI\bin\Debug\netcoreapp2.1\Web\libs\paginationjs-master\bower.json
+D:\Projects\SupportAPI\SupportAPI\bin\Debug\netcoreapp2.1\Web\libs\paginationjs-master\component.json
+D:\Projects\SupportAPI\SupportAPI\bin\Debug\netcoreapp2.1\Web\libs\paginationjs-master\package.json
+D:\Projects\SupportAPI\SupportAPI\bin\Debug\netcoreapp2.1\SupportAPI.deps.json
+D:\Projects\SupportAPI\SupportAPI\bin\Debug\netcoreapp2.1\SupportAPI.runtimeconfig.json
+D:\Projects\SupportAPI\SupportAPI\bin\Debug\netcoreapp2.1\SupportAPI.runtimeconfig.dev.json
+D:\Projects\SupportAPI\SupportAPI\bin\Debug\netcoreapp2.1\SupportAPI.dll
+D:\Projects\SupportAPI\SupportAPI\bin\Debug\netcoreapp2.1\SupportAPI.pdb
+D:\Projects\SupportAPI\SupportAPI\obj\Debug\netcoreapp2.1\SupportAPI.csprojAssemblyReference.cache
+D:\Projects\SupportAPI\SupportAPI\obj\Debug\netcoreapp2.1\SupportAPI.AssemblyInfoInputs.cache
+D:\Projects\SupportAPI\SupportAPI\obj\Debug\netcoreapp2.1\SupportAPI.AssemblyInfo.cs
+D:\Projects\SupportAPI\SupportAPI\obj\Debug\netcoreapp2.1\SupportAPI.csproj.CoreCompileInputs.cache
+D:\Projects\SupportAPI\SupportAPI\obj\Debug\netcoreapp2.1\SupportAPI.RazorAssemblyInfo.cache
+D:\Projects\SupportAPI\SupportAPI\obj\Debug\netcoreapp2.1\SupportAPI.RazorAssemblyInfo.cs
+D:\Projects\SupportAPI\SupportAPI\obj\Debug\netcoreapp2.1\SupportAPI.RazorTargetAssemblyInfo.cache
+D:\Projects\SupportAPI\SupportAPI\obj\Debug\netcoreapp2.1\SupportAPI.dll
+D:\Projects\SupportAPI\SupportAPI\obj\Debug\netcoreapp2.1\SupportAPI.pdb
+D:\Projects\SupportAPI\SupportAPI\obj\Debug\netcoreapp2.1\SupportAPI.genruntimeconfig.cache
